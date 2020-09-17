@@ -1,0 +1,26 @@
+server:
+  port: 8080
+  http2:
+    enabled: true
+  servlet:
+    context-path: /api
+
+jwt:
+  tokenExpiration: 432000000
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/otp
+    username: root
+    password: root
+    initialization-mode: always
+
+  jpa:
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+
+twilio:
+  account: 123456
+  token: 123456
+  sender: 123456
